@@ -1,0 +1,705 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Inter", sans-serif ;
+    background-color: black;
+}
+main{
+    background-color: black    ;
+}
+main section{
+    max-width: 75% ;
+    margin: 60px auto;
+   
+    
+}
+.sec-title{
+    font-size: 35px ;
+    font-weight: 5px ;
+    color: white;
+}
+.paragraph{
+    font-size: 13px ;
+    color:rgba(255, 255, 255, 0.5) ;
+    line-height: 18px ;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Header  */
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-color: gray;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75% ;
+    margin: 0 auto;
+    padding-top: 25px; 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 10px 2px;
+    padding-right:20px ;
+    
+}
+nav ul li{
+    list-style: none;
+    color: white;
+    font-weight: 300;
+    transition: all 0.3s;
+   
+}
+nav ul a{
+    color: white;
+}
+nav h3{
+    font-size: 35px;
+    color: #E6533C;
+    font-style: italic;
+}
+.fa-solid {
+    color: white;
+    font-size: 27px;
+}
+.menu{
+    display: none;
+}
+.home{
+    background-color: #E6533C;
+    border-radius: 30px;
+    padding: 9px 15px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+   
+    
+    /* border:2px solid #E6533C; */
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 60%;
+    margin-top: 100px;
+}
+.text .bnr-title{
+    color: white;
+    font-size: 70px;
+    line-height: 70px;
+    width: 400px;
+    font-weight: 800;
+}
+.shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 100px;
+    font-weight: 200;
+}
+.bnr-des{
+    width: 400px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.primary-btn{
+    
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.join-now{
+    background-color: #E6533C;
+}
+.download{
+    background-color:transparent; 
+    border: 1px solid white;
+    padding:11px 35px ;
+}
+.bnr-pic{
+    position: relative;
+    bottom: 0;
+    
+}
+.bnr-pic img{
+    height: 100%;
+    width:100%;  
+    /* border:1px solid #E6533C; */
+}
+.blurry-btn{
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    padding: 12px 15px;
+    font-family:"Inter", sans-serif  ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border:0px ;
+    }
+.top{
+    
+    right: -25px;
+    bottom:  370px;
+    gap:2px;
+}
+.top h2{
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+.top p{
+    color: white;
+    font-weight: 300;
+}
+.bottom{
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    bottom: 60px;
+    left: -50px;
+    padding: 15px 15px;
+}
+ .btn350{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bottom h2{
+    color: white;
+    font-size: 20px;
+}
+.bottom p{
+    color: white;
+    font-weight: 300;
+}
+.bnr-pic .bottom .circle{
+    background-color: rgb(230, 83, 60);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+/* Header Responsive */
+
+@media screen and (max-width:576px){
+    header{
+        min-height: 100vh;
+    }
+    nav ul,li{
+        display: none;
+    }
+    nav{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    nav h3{
+        font-size: 25px;
+        color: #E6533C;
+        font-style: italic;
+    }
+    .menu{
+        display:inline-block;
+        cursor: pointer;
+    }
+    .banner{
+        flex-direction: column;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top: 80px;
+        gap: 50px; 
+        
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .text .bnr-title{
+        color: white;
+        font-size: 40px;
+        line-height: 45px;
+        width: 300px;
+        font-weight: 800;
+    }
+    .shape{
+        font-family: 'Miama', sans-serif;
+        font-size: 70px;
+        font-weight: 100;
+    }
+    
+    .bnr-des{
+        width: 280px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .top{
+        bottom: 500px;
+        right: 15px;
+    }
+    .bottom{
+        left: 20px;
+        bottom: 290px;
+    }
+    .join-now, .download{
+        max-width: 100%;
+    }
+    
+}
+/* Main  */
+/* Section-1 */
+.sec-1 .sec-1-con{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.sec-1 .sec-1-des{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 6px;
+}
+.cards .card h5{
+    color: white;
+    font-size: 18px;
+}
+.cards .card p{
+    text-align: center;
+}
+.cards .card img{
+    max-width: 180px;
+    border-radius: 50%;
+}
+/* Section-1 Responsive */
+@media screen and (max-width:576px){
+    .sec-con p{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+/* Section-2 */
+.sec-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    padding: 30px 0;
+    border-radius: 25px;
+}
+.sec-2{
+    background-color: #222222;
+}
+.sec-2-btn{
+    background-color: #E6533C;
+    padding: 12px 50px;
+}
+.sec-2-con{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 40%;
+}
+.sec-2-img{
+    width: 30%;
+}
+.sec-2-img img{
+    width: 100%;
+    border-radius: 25px;
+}
+/* Section-2 Responsive */
+@media screen and (max-width:576px){
+    .sec-2{
+        flex-direction: column;
+        gap: 20px;
+        max-width: 85%;
+        }
+        .sec-2-con{
+            max-width: 80%;
+        }
+        .sec-2-img{
+            width: 80%;
+        }
+        .sec-2-btn{
+            width: 100%;
+        }
+    }
+/* Section-3  */
+.sec-3{
+    max-width: 100%;
+    
+    /* background-color: #222222; */
+    
+}
+.sec-3-con{
+    max-width:550px ;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sec-3-con p{
+    text-align: center;
+    
+}
+.sec-3-all{
+    
+    max-width:75% ;
+    margin: 0  auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid tomato; */
+
+}
+.sec-3-bg{
+    max-width: 100%;
+    background-color: #222222;
+    padding: 30px 0;
+    
+}
+.sec-3 .table h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.table{
+    max-width: 50%;
+}
+.table th{
+    color:white;
+    
+}
+.table td{
+    font-size: 14px ;
+    color:rgba(255, 255, 255, 0.5) ;
+    font-weight: 300;
+}
+.table th,td{
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 22px;
+}
+table{
+    border-collapse: collapse;
+}
+.form{
+    max-width: 50%;
+    /* border: 2px solid white; */
+    
+}
+.form .form-content h1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.form .main-form input[type="text"] {
+    padding: 14px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    /* width: 100%; */
+}
+.form .main-form input[type="number"]{
+    padding: 14px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.form .main-form input[type="submit"]{
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #E6533C;
+    display: grid;
+    grid-column: span 1.5;
+}
+.form .main-form form{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#select{
+    display: grid;
+    grid-column: span 2;
+}
+
+
+
+/* Section-3 Responsive */
+@media screen and (max-width:576px){
+    .sec-3-all{
+        max-width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 5%;
+    }
+    .table,.form{
+        max-width: 100%;
+    }
+    .form form{
+       width: 50%;
+    }
+    .form .main-form input{
+        padding: 14px 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 8px;
+        /* width: 100%; */
+    }
+    .sec-3-con{
+        max-width: 85%;
+    }
+    .form .main-form form{
+        
+        grid-template-columns: repeat(2,95%);
+        
+    }
+
+}
+
+
+
+
+
+/* Section-4  */
+.sec-4{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.sec-4-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px; 
+    margin: 0 auto;
+    gap: 10px;
+}
+.sec-4-des{
+    text-align: center;
+}
+.photos{
+    /* margin: 30px; */
+    background-color: #222222;
+    border-radius: 25px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+}
+.single-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+       
+}
+.single-photo img{
+    width:33%;
+    
+    
+    
+    border-radius: 25px;
+}
+@media screen and (max-width:576px){
+    .single-photo{
+        /* flex-wrap: nowrap; */
+        flex-direction: column;
+        gap: 20px;
+    }
+    .single-photo img{
+        width:100%;
+}
+    .sec-4{
+        max-width: 85%;
+    }
+}
+/* Section-5  */
+.sec-5 .sec-5-con{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   
+}
+.sec-5 .pricing-cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-5 .price-card{
+   width: 300px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    
+}
+.price-card h2{
+color: white;
+font-size: 30px;
+margin-bottom: 20px;
+}
+.price-card h1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.price-card p{
+    color: white;
+}
+/* Section-5 Responsive */
+@media screen and (max-width:576px){
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: #222222;
+    
+    
+    
+}
+footer .footer-con{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    padding: 50px 0;
+    margin: 0px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) ;
+    
+}
+.part-1,.part-2{
+    max-width: 25%;
+}
+footer .part-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .part-1 h1{
+    
+    color: #E6533C;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 800;
+}
+.part-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.part-2 h3{
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+}
+.part-2 .foot-des{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+footer .fitness{
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 30px 0;
+   
+}
+/* Footer Responsive*/
+@media screen and (max-width:576px){
+    footer{
+        width: 100%;
+    }
+    .footer-con{
+        flex-direction: column;
+        gap: 30px;
+       width: 85%;
+        
+        /* border: 2px solid tomato; */
+        
+        
+    }
+    .part-1,.part-2{
+        max-width: 100%;
+}
+.part-2 .foot-des{
+    
+    font-weight: 300;
+    
+}
+}
